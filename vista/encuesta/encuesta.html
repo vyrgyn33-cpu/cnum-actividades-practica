@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+	<title>Encuesta</title>
+</head>
+<body>
+<div class="contenedor-con-fondo">
+<div class="h1_titulo1_">
+<h1 class="h1__titulo1__"><u>"Encuesta sobre la web del colegio"</u></h1>
+<br>
+<div class="contenedor_parrafo">
+<p class="contenedor_parrafo_p">
+A continuación les dejamos una breve encuesta para que deje sus comentarios acerca de la página web del colegio.
+<br> Sobre la barra celeste coloque el cursor y arrastre hasta que aparezca el emoji que caracteriza su experiencia.
+<center>
+<label>
+<div class="big-emoji">
+<input class="big-slider" type="range" min="0" max="4" value="0" oninput="emoji.innerText = 
+['🥲', '😒', '😐', '🙂', '😁'] [this.value]">
+<p id="emoji">😁</p>
+</label>
+</center>
+</div>
+<br>
+<div class="contenedor_parrafo">
+<p class="contenedor_parrafo_p">
+Luego complete el siguiente cuadro de diálogo para conocer su opinión.
+</p>
+<h2>Encuesta de Satisfacción</h2>
+    <form action="#" method="POST">
+        <div class="campo">
+        <label for="nombreCompleto">Apellido y Nombre:</label>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+        </div>
+
+        <div class="campo">
+            <p>¿Le gustó esta web?</p>
+            <div class="opciones">
+                <label>
+                    <input type="radio" name="gustaWeb" value="si" required> Sí
+                </label>
+                <label>
+                    <input type="radio" name="gustaWeb" value="no"> No
+                </label>
+            </div>
+        </div>
+        <div class="campo">
+            <label for="opinion">Su opinión:</label>
+            <br>
+            <textarea id="opinion" name="opinion" placeholder="Escriba aquí sus comentarios..."></textarea>
+        </div>
+        <button type="submit" class="boton">Enviar Encuesta</button>
+    </form>
+<br>
+<br>
+<a href="../../index.html"><button type="button">"Volver a la página principal"</a>
+</body>
+</html>
